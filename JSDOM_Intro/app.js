@@ -22,3 +22,12 @@ changeColorButton.addEventListener("click", () => {
     text.style.color = newColour.value.toLowerCase();
 
 });
+
+const xYPara = document.getElementById("xY")
+
+document.addEventListener("click", (a) => {
+    const x = a.clientX;
+    const y = a.clientY;
+
+xYPara.textContent = `X: ${x}, Y: ${y}`
+} )
